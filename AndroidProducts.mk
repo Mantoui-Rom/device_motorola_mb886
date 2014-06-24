@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_mb886.mk
+    $(LOCAL_DIR)/mantoui_mb886.mk

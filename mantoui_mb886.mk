@@ -1,5 +1,5 @@
-# Inherit some common CM stuff. 
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common mantoui stuff. 
+$(call inherit-product, vendor/mantoui/config/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
@@ -7,7 +7,9 @@ TARGET_SCREEN_HEIGHT := 1280
 
 # Release name
 PRODUCT_RELEASE_NAME := MB886
-PRODUCT_NAME := cm_mb886
+PRODUCT_NAME := mantoui_mb886
+
+MACHINE_MB886 := true
 
 $(call inherit-product, device/motorola/mb886/full_mb886.mk)
 

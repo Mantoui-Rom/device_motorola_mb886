@@ -31,7 +31,7 @@ endif
 # mb886 specific overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_LOCALES := en_US
+PRODUCT_LOCALES := zh_CN
 PRODUCT_LOCALES += xhdpi
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
@@ -41,7 +41,7 @@ TARGET_USES_MOTOROLA_MSM8960_COMMON_MEDIA_PROFILES := true
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320
+    ro.sf.lcd_density=300
 
 #telephony
 PRODUCT_PROPERTY_OVERRIDES += \
