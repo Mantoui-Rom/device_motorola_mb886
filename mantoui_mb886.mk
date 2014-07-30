@@ -9,8 +9,6 @@ TARGET_SCREEN_HEIGHT := 1280
 PRODUCT_RELEASE_NAME := MB886
 PRODUCT_NAME := mantoui_mb886
 
-MACHINE_MB886 := true
-
 $(call inherit-product, device/motorola/mb886/full_mb886.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
