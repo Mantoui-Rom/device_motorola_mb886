@@ -1,18 +1,28 @@
-# Inherit some common mantoui stuff. 
-$(call inherit-product, vendor/mantoui/config/common.mk)
+#
+# Copyright (C) 2014 The Android Open-Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1280
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Release name
-PRODUCT_RELEASE_NAME := MB886
+# Inherit from device.mk
+$(call inherit-product, device/motorola/mb886/device.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := mb886
 PRODUCT_NAME := mantoui_mb886
-
-$(call inherit-product, device/motorola/mb886/full_mb886.mk)
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_BRAND=motorola \
-    PRODUCT_NAME=MB886_att \
-    BUILD_PRODUCT=qinara \
-    BUILD_FINGERPRINT=motorola/MB886_att/qinara:4.1.1/9.8.0Q-97_MB886_FFW-20/27:user/release-keys
+PRODUCT_BRAND := Motorola
+PRODUCT_MODEL := mb886
+PRODUCT_MANUFACTURER := Motorola
