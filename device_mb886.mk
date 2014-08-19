@@ -47,7 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.lteOnGsmDevice=1 \
 	telephony.lteOnCdmaDevice=0 \
-	ro.telephony.default_network=9
+	ro.telephony.default_network=5
 
 $(call inherit-product, device/motorola/qcom-common/idc/idc.mk)
 $(call inherit-product, device/motorola/qcom-common/keychars/keychars.mk)
